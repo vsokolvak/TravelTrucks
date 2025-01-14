@@ -1,0 +1,65 @@
+
+.conteiner {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+.h3 {
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  margin-top: 32px;
+}
+
+.locationConteiner {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+.locationIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+
+.fieldLocation {
+  padding: 16px 48px 16px;
+  border-radius: 12px;
+  background: var(--inputs);
+  width: 100%;
+  font-weight: 400;
+}
+
+.fieldLocation::placeholder {
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.hr {
+  height: 1px;
+  background-color: var(--gray-light);
+  margin: 24px 0;
+}
+
+.equipmentConteiner, .typeConteiner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.equipmentConteiner input, .typeConteiner input {
+  display: none;
+}
+
+.formButton {
+  margin-top: 40px;
+  width: 166px;
+}

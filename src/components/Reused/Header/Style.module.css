@@ -21,3 +21,12 @@
   display: flex;
   justify-content: space-between;
 }
+
+.navItemLink {
+  color: var(--main);
+}
+
+.active {
+  color: var(--button-hover)
+}
+

@@ -35,6 +35,7 @@ body {
   min-width: 720px;
   min-height: 100vh;
   background-color: var(--white);
+  color: var(--main);
 }
 
 h1 {
@@ -53,4 +54,8 @@ button {
 
 button:hover {
   background: var(--button-hover);
+}
+
+input {
+  border: none;
 }

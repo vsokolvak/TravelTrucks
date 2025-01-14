@@ -1,28 +1,37 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import style from './Style.module.css'
+import clsx from 'clsx';
 
 function Header () {
-    return (
-      <div className={style.container}>
-        <Link to={"/"} className={style.logo}>
-          <img
-            src="../../../../public/images/logo/TravelTrucks.svg"
-            alt="TravelTrucks"
-          />
-        </Link>
-        <nav className={style.nav}>
-          <ul className={style.navList}>
-            <li className={style.navItem}>
-              {" "}
-              <Link to={"/"}>Home</Link>{" "}
-            </li>
-            <li className={style.navItem}>
-              <Link to={"/catalog"}>Catalog</Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    );
+
+  const buildLinkClass = ({ isActive }) => {
+    return clsx(style.navItemLink, isActive && style.active);
+  };
+
+  return (
+    <div className={style.container}>
+      <Link to={"/"} className={style.logo}>
+        <img
+          src="../../../../public/images/logo/TravelTrucks.svg"
+          alt="TravelTrucks"
+        />
+      </Link>
+      <nav className={style.nav}>
+        <ul className={style.navList}>
+          <li className={style.navItem}>
+            <NavLink className={buildLinkClass} to={"/"}>
+              Home
+            </NavLink>
+          </li>
+          <li className={style.navItem}>
+            <NavLink className={buildLinkClass} to={"/catalog"}>
+              Catalog
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
 }
 
 export default Header;
