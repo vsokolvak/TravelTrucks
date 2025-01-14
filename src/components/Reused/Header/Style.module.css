@@ -1,0 +1,23 @@
+.container {
+  padding: 28px 64px;
+  position: relative;
+  background-color: var(--inputs);
+  border-bottom: 1px solid var(--badges);
+}
+
+.logo {
+  position: absolute;
+  left: 64px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav {
+  width: 140px;
+  margin: 0 auto;
+}
+
+.navList {
+  display: flex;
+  justify-content: space-between;
+}

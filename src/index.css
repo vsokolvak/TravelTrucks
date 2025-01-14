@@ -4,9 +4,6 @@
 
 :root {
   --font-family: "Inter", sans-serif;
-  line-height: 1.5;
-  font-weight: 500;
-
   --main: #101828;
   --text: #475467;
   --white: #fff;
@@ -27,9 +24,8 @@
 }
 
 a {
-  font-weight: 500;
-  color: var(--button);
-  text-decoration: inherit;
+  color: var(--main);
+  text-decoration: none;
   transition: all 0.1s linear;
 }
 a:hover {
@@ -37,10 +33,14 @@ a:hover {
 }
 
 body {
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 16px;
   margin: 0;
   min-width: 720px;
   min-height: 100vh;
-  background-color: var(--inputs);
+  background-color: var(--white);
 }
 
 h1 {

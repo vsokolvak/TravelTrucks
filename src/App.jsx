@@ -3,12 +3,14 @@ import HomePage from './pages/HomePage/Index';
 import Catalog from './pages/Catalog/Index';
 import Cemper from "./pages/Cemper/Index";
 import NotFound from "./pages/NotFound/Index";
+import Header from "./components/Reused/Header/Index";
 
 
 function App() {
 
   return (
     <div>
+      <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/catalog" element={<Catalog />} />
