@@ -1,0 +1,18 @@
+.loading {
+  font-size: 70px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.conteiner {
+  flex-grow: 0;
+}
+
+.carList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}

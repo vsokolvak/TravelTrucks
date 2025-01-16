@@ -1,0 +1,85 @@
+.conteiner {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  border: 1px solid var(--gray-light);
+  border-radius: 20px;
+}
+
+.carPhoto {
+  border-radius: 10px;
+  width: 292px;
+  height: 320px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-position: center;
+  background-size:auto 100%;
+}
+
+.carInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.carName {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+}
+
+.priceContainer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.carFavorite {
+  cursor: pointer;
+}
+
+.carDetail {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  color: var(--main);
+}
+
+.starlIcon {
+  stroke: var(--rating);
+  margin-right: 4px;
+}
+
+.mapIcon {
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  margin-right: 4px;
+}
+
+.carDescription {
+  font-weight: 400;
+  color: var(--text);
+  max-width: 524px;
+}
+
+.carDescription p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.carEquipList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.carShowMore {
+  padding: 16px 40px;
+  width: 166px;
+}
