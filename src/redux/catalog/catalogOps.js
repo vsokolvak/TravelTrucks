@@ -14,3 +14,15 @@ export const getCemperList = createAsyncThunk(
     }
   }
 );
+
+export const getCemper = createAsyncThunk(
+  "catalog/getOne",
+  async (id, thuncApi) => {
+    try {
+      const response = await axios.get(`/${id}`);
+      return response.data;
+    } catch (e) {
+      return thuncApi.rejectWithValue(e.message);
+    }
+  }
+);

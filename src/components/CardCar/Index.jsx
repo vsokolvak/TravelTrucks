@@ -1,9 +1,12 @@
-import { Fragment, useMemo } from "react";
 import style from "./Style.module.css";
-import IconCard from './../Reused/IconCard/Index';
-import { createNormEquipment } from './../../utilits/createNormEquipment';
+
+import { useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 
+import CarName from "../Reused/CarName/Index";
+import IconCard from './../Reused/IconCard/Index';
+
+import { createNormEquipment } from './../../utilits/createNormEquipment';
 
 function CardCar({car}) {
 
@@ -67,15 +70,7 @@ function CardCar({car}) {
         }}
       ></div>
       <div className={style.carInfo}>
-        <div className={style.carName}>
-          <h2 className={style.name}> {name} </h2>
-          <div className={style.priceContainer}>
-            <h2 className={style.price}>€{price + ".00"} </h2>
-            <svg className={style.carFavorite} width="26" height="24">
-              <use href={`/public/images/icon/icon.svg#icon-heart`}></use>
-            </svg>
-          </div>
-        </div>
+        <CarName name={name} price={price} />
         <div className={style.carDetail}>
           <svg className={style.starlIcon} width="16" height="16">
             <use href={`/public/images/icon/icon.svg#icon-star`}></use>

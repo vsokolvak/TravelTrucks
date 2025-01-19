@@ -23,24 +23,6 @@
   justify-content: space-between;
 }
 
-.carName {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 133%;
-}
-
-.priceContainer {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-.carFavorite {
-  cursor: pointer;
-}
-
 .carDetail {
   display: flex;
   align-items: center;

@@ -1,0 +1,14 @@
+.conteiner {
+  border-radius: 10px;
+  padding: 44px 52px;
+  width: 631px;
+  background: var(--inputs);
+  gap: 100px;
+}
+
+.carEquipList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+

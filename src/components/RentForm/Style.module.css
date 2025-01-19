@@ -1,0 +1,47 @@
+
+.conteiner {
+  width: 588px;
+  display: flex;
+  flex-direction: column;
+  padding: 44px 57px;
+  gap: 24px;
+}
+
+.formTitleH {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--main);
+}
+
+.formTitleText {
+  margin-top: 8px;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.fieldBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.inputField {
+  border-radius: 12px;
+  padding: 18px;
+  background: var(--inputs);
+  font-weight: 400;
+  resize: none;
+  border: none;
+}
+
+.inputField::placeholder {
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.submitButton {
+  width: 166px;
+  height: 56px;
+  align-self: center;
+}
