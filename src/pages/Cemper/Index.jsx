@@ -7,6 +7,8 @@ import { selectCatalogCurrent } from "../../redux/catalog/catalogSelector";
 import clsx from "clsx";
 import RentForm from "../../components/RentForm/Index";
 import Features from "../../components/Features/Index";
+import locationIcon from "/images/icon/SVG/map.svg";
+
 
 function Cemper() {
   const dispatch = useDispatch();
@@ -29,11 +31,7 @@ function Cemper() {
           <p className={style.carDetailText}>
             {cemper.rating} ({cemper.reviews?.length} Reviews)
           </p>
-          <img
-            className={style.mapIcon}
-            src="/public/images/icon/Map.svg"
-            alt="map"
-          />
+          <img className={style.mapIcon} src={locationIcon} alt="map" />
           <p> {cemper.location} </p>
         </div>
         <div className={style.priceContainer}>

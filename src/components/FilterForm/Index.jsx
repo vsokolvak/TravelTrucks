@@ -4,7 +4,7 @@ import IconFilter from "../Reused/IconFilter/Index";
 import { useDispatch } from "react-redux";
 import { filtersChange } from "../../redux/filters/filtersSlice";
 
-import locationIcon from '../../../public/images/icon/map.svg'
+import locationIcon from '/images/icon/SVG/map.svg'
 
 function FilterForm() {
   
