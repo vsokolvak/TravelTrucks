@@ -4,6 +4,8 @@ import IconFilter from "../Reused/IconFilter/Index";
 import { useDispatch } from "react-redux";
 import { filtersChange } from "../../redux/filters/filtersSlice";
 
+import locationIcon from '../../../public/images/icon/map.svg'
+
 function FilterForm() {
   
   const initialValues = {
@@ -31,11 +33,7 @@ function FilterForm() {
               name="location"
               placeholder="Kyiv, Ukraine"
             />
-            <img
-              src="../../../public/images/icon/Map.svg"
-              alt="map"
-              className={style.locationIcon}
-            />
+            <img src={locationIcon} alt="map" className={style.locationIcon} />
           </div>
 
           <h3 className={style.h3}>Filters</h3>
@@ -82,7 +80,9 @@ function FilterForm() {
             </label>
           </div>
 
-          <button className={style.formButton} type="submit">Search</button>
+          <button className={style.formButton} type="submit">
+            Search
+          </button>
         </Form>
       </Formik>
     </>

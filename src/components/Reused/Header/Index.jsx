@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import style from './Style.module.css'
 import clsx from 'clsx';
+import logo from '../../../../public/images/logo/TravelTrucks.svg'
 
 function Header () {
 
@@ -11,10 +12,7 @@ function Header () {
   return (
     <div className={style.container}>
       <Link to={"/"} className={style.logo}>
-        <img
-          src="../../../../public/images/logo/TravelTrucks.svg"
-          alt="TravelTrucks"
-        />
+        <img src={logo} alt="TravelTrucks" />
       </Link>
       <nav className={style.nav}>
         <ul className={style.navList}>
